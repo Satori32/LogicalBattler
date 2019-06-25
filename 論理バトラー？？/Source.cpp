@@ -82,8 +82,11 @@ bool ShowEnd() {
 int main() {
 	SetDisplayMode();
 
+	ESS::HideCursor();
+
 	if (!ShowTitle()) return 0;
 	if (!ShowGame()) return 0;
+	ESS::ShowCursor();
 	ShowEnd();
 
 	std::cout << std::endl << "copyright 2019. Ä‚«’¹." << std::endl;
